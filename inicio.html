@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BioLab Interactivo</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+<style>
+
+body{
+
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef1f5;
+
+}
+
+.container{
+
+    width:95%;
+    margin:auto;
+
+}
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#9fa7b3;
+
+    padding:15px 30px;
+
+    border-radius:0 0 10px 10px;
+
+}
+
+.logo{
+
+    font-size:24px;
+    color:white;
+    font-weight:bold;
+
+}
+
+.menu{
+
+    display:flex;
+    gap:18px;
+
+}
+
+.menu button{
+
+    background:#d7dce4;
+
+    border:none;
+
+    padding:10px 22px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.menu button:hover{
+
+    background:white;
+
+}
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    margin-top:35px;
+
+}
+
+.left-card{
+
+    background:#d9dee5;
+
+    padding:30px;
+
+    border-radius:10px;
+
+}
+
+.left-card h1{
+
+    margin-top:0;
+
+    color:#2d3748;
+
+}
+
+.left-card p{
+
+    text-align:justify;
+
+    line-height:1.7;
+
+}
+
+.left-card ul{
+
+    margin-top:20px;
+
+    line-height:2;
+
+}
+
+.button-group{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.button-group a{
+
+    text-decoration:none;
+
+}
+
+.button-group button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.button-group button:hover{
+
+    background:#a8d5ff;
+
+}
+
+.right-card{
+
+    background:#d9dee5;
+
+    border-radius:10px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+}
+
+.right-card img{
+
+    width:100%;
+
+    max-width:500px;
+
+    border-radius:10px;
+
+}
+
+.modules{
+
+    margin-top:50px;
+
+}
+
+.modules h2{
+
+    text-align:center;
+
+    color:#2d3748;
+
+    margin-bottom:30px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.module-card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.module-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.module-card h3{
+
+    margin-top:0;
+
+    color:#2d3748;
+
+}
+
+.module-card p{
+
+    line-height:1.6;
+
+}
+
+.module-card button{
+
+    margin-top:15px;
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    background:#9fa7b3;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.module-card button:hover{
+
+    background:#7d8796;
+
+}
+
+footer{
+
+    margin-top:50px;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#555;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="navbar">
+
+<div class="logo">
+
+BioLab Interactivo
+
+</div>
+
+<div class="menu">
+
+<a href="index.html"><button>Inicio</button></a>
+
+<a href="ciclo.html"><button>Ciclo Celular</button></a>
+
+<a href="mitosis.html"><button>Mitosis</button></a>
+
+<a href="metabolismo.html"><button>Metabolismo</button></a>
+
+<a href="anaerobica.html"><button>R. Anaeróbica</button></a>
+
+</div>
+
+</div>
+
+<section class="hero">
+
+<div class="left-card">
+
+<h1>Bienvenido</h1>
+
+<p>
+
+BioLab Interactivo es una plataforma educativa diseñada para comprender algunos de los procesos celulares más importantes mediante recursos visuales, explicaciones claras y actividades interactivas. Cada módulo presenta información resumida para facilitar el aprendizaje de la Biología de manera dinámica.
+
+</p>
+
+<h3>En este sitio aprenderás:</h3>
+
+<ul>
+
+<li>El ciclo celular y sus etapas.</li>
+
+<li>La mitosis y la formación de células hijas.</li>
+
+<li>El metabolismo celular y la obtención de energía.</li>
+
+<li>La respiración anaeróbica y su importancia biológica.</li>
+
+</ul>
+
+<div class="button-group">
+
+<a href="ciclo.html">
+
+<button>Ciclo Celular</button>
+
+</a>
+
+<a href="mitosis.html">
+
+<button>Mitosis</button>
+
+</a>
+
+<a href="metabolismo.html">
+
+<button>Metabolismo</button>
+
+</a>
+
+<a href="anaerobica.html">
+
+<button>Resp. Anaeróbica</button>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="right-card">
+
+<img src="img/celula.gif" alt="Animación de una célula">
+
+</div>
+
+</section>
+
+<section class="modules">
+
+<h2>Explora los módulos</h2>
+
+<div class="cards">
+
+<!-- Tarjeta 1 -->
+
+<div class="module-card">
+
+<h3>① Ciclo Celular</h3>
+
+<p>
+
+Conoce las etapas por las que pasa una célula desde su crecimiento,
+la duplicación del ADN hasta su división. Comprende la importancia
+de la interfase y de la fase M en el mantenimiento de la vida.
+
+</p>
+
+<a href="ciclo.html">
+
+<button>Ingresar al módulo</button>
+
+</a>
+
+</div>
+
+<!-- Tarjeta 2 -->
+
+<div class="module-card">
+
+<h3>② Mitosis</h3>
+
+<p>
+
+Aprende cómo una célula madre se divide para formar dos células
+hijas genéticamente idénticas mediante las fases de profase,
+metafase, anafase, telofase y citocinesis.
+
+</p>
+
+<a href="mitosis.html">
+
+<button>Ingresar al módulo</button>
+
+</a>
+
+</div>
+
+<!-- Tarjeta 3 -->
+
+<div class="module-card">
+
+<h3>③ Metabolismo Celular</h3>
+
+<p>
+
+Descubre cómo las células obtienen, transforman y utilizan la
+energía necesaria para realizar todas sus funciones mediante
+procesos como el catabolismo y el anabolismo.
+
+</p>
+
+<a href="metabolismo.html">
+
+<button>Ingresar al módulo</button>
+
+</a>
+
+</div>
+
+<!-- Tarjeta 4 -->
+
+<div class="module-card">
+
+<h3>④ Respiración Anaeróbica</h3>
+
+<p>
+
+Explora el proceso mediante el cual algunas células producen
+energía en ausencia de oxígeno, comprendiendo la glucólisis y
+los diferentes tipos de fermentación.
+
+</p>
+
+<a href="anaerobica.html">
+
+<button>Ingresar al módulo</button>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>BioLab Interactivo</h3>
+
+<p>
+
+Proyecto educativo de Biología desarrollado para facilitar el
+aprendizaje de los principales procesos celulares mediante
+contenido interactivo y recursos visuales.
+
+</p>
+
+<p>
+
+© 2026 | Ciclo Celular • Mitosis • Metabolismo • Respiración Anaeróbica
+
+</p>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>

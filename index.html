@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metabolismo Celular</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Barra de navegación -->
+    <div class="navbar">
+
+        <div class="logo">BioLab Interactivo</div>
+
+        <div class="menu">
+            <button>Inicio</button>
+            <button>Ciclo Celular</button>
+            <button>Metabolismo</button>
+            <button>Fotosíntesis</button>
+        </div>
+
+    </div>
+
+    <!-- Panel izquierdo -->
+    <aside class="sidebar">
+
+        <div class="card index">
+            <h3>Índice Interno</h3>
+            <ul>
+                <li>Conceptos</li>
+                <li>Rutas metabólicas</li>
+                <li>ATP y Energía</li>
+                <li>Quiz</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Idea central</h3>
+            <p>
+                El metabolismo es el conjunto de reacciones químicas
+                que permiten a la célula obtener energía y construir
+                moléculas necesarias para la vida.
+            </p>
+        </div>
+
+    </aside>
+
+    <!-- Contenido -->
+    <main class="main">
+
+        <!-- Encabezado -->
+        <section class="hero">
+
+            <h1>Metabolismo</h1>
+
+            <p>
+                Conjunto de procesos químicos que transforman materia
+                y energía para mantener la vida celular.
+            </p>
+
+            <div class="grid-info">
+
+                <div class="info-box">
+                    <h3>Catabolismo</h3>
+                    <p>Descompone moléculas complejas y libera energía.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Anabolismo</h3>
+                    <p>Construye moléculas complejas utilizando energía.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Enzimas</h3>
+                    <p>Aceleran las reacciones químicas celulares.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>ATP</h3>
+                    <p>Principal moneda energética de la célula.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>NADH</h3>
+                    <p>Transportador de electrones de alta energía.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Regulación</h3>
+                    <p>Controla la velocidad de las rutas metabólicas.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Mapa metabólico -->
+        <section class="map-section">
+
+            <h2>Mapa Metabólico Simplificado</h2>
+
+            <div class="map-grid">
+
+                <div class="route">
+
+                    <h3>Ruta visual</h3>
+
+                    <div class="flow">
+                        <div>Nutrientes</div>
+                        <div>Catabolismo</div>
+                        <div>ATP</div>
+                        <div>Anabolismo</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Enzimas -->
+        <section class="enzymes">
+
+            <h2>Enzimas y Control de Velocidad</h2>
+
+            <div class="enzymes-grid">
+
+                <div>
+                    <h3>Sitio Activo</h3>
+                    <p>Región donde se une el sustrato.</p>
+                </div>
+
+                <div>
+                    <h3>Inhibición Competitiva</h3>
+                    <p>Un inhibidor compite con el sustrato.</p>
+                </div>
+
+                <div>
+                    <h3>Retroinhibición</h3>
+                    <p>El producto final regula la ruta metabólica.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Quiz -->
+        <section class="quiz-section">
+
+            <div class="quiz-module">
+
+                <div class="quiz-header">
+
+                    <h2>Quiz de Metabolismo</h2>
+
+                    <span class="quiz-tag">
+                        Evaluación
+                    </span>
+
+                </div>
+
+                <p class="quiz-description">
+                    Comprueba tus conocimientos sobre metabolismo celular.
+                </p>
+
+                <h3 id="score">Puntaje: 0/5</h3>
+
+                <!-- Pregunta 1 -->
+                <div class="quiz-card">
+
+                    <h3>1. ¿Qué parte del metabolismo degrada moléculas?</h3>
+
+                    <button class="answer" data-correct="true">Catabolismo</button>
+                    <button class="answer">Anabolismo</button>
+                    <button class="answer">Fotosistema II</button>
+                    <button class="answer">Telofase</button>
+
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="quiz-card">
+
+                    <h3>2. ¿Qué molécula funciona como moneda energética?</h3>
+
+                    <button class="answer">CO₂</button>
+                    <button class="answer" data-correct="true">ATP</button>
+                    <button class="answer">Lactato</button>
+                    <button class="answer">Cohesina</button>
+
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="quiz-card">
+
+                    <h3>3. ¿Qué hacen las enzimas?</h3>
+
+                    <button class="answer">Aumentan la energía de activación</button>
+                    <button class="answer">Eliminan el ADN</button>
+                    <button class="answer" data-correct="true">
+                        Disminuyen la energía de activación
+                    </button>
+                    <button class="answer">Son siempre productos finales</button>
+
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="quiz-card">
+
+                    <h3>4. ¿Qué ruta consume energía para construir moléculas?</h3>
+
+                    <button class="answer">Fermentación alcohólica</button>
+                    <button class="answer">Catabolismo</button>
+                    <button class="answer">Glucólisis</button>
+                    <button class="answer" data-correct="true">Anabolismo</button>
+
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="quiz-card">
+
+                    <h3>5. ¿Qué transportan NADH y FADH₂?</h3>
+
+                    <button class="answer">Luz visible</button>
+                    <button class="answer" data-correct="true">
+                        Electrones de alta energía
+                    </button>
+                    <button class="answer">Cromosomas</button>
+                    <button class="answer">Oxígeno como pigmento</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
